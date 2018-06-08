@@ -1,0 +1,48 @@
+
+The css rules takes precedence according to:
+
+-the !importance
+-specificity
+-location
+
+ !Importance
+ lets look at this code,
+<head> 
+<title></title>
+<style>
+div {
+font-size: 10pt !importance;
+}
+
+</style>
+
+</head>
+<body>
+<div class="header>
+<p>Make money everyday</p>
+</div>
+</body>
+
+the importance tag will take precendence over the classed element.
+
+-Specificity:This has to do with how the element is being tagged.
+For example:
+
+<head> 
+<title></title>
+<style>
+div {
+font-size: 30pt;
+}
+#header-content {
+font-size: 14pt
+</style>
+
+</head>
+<body>
+<div class="header" id="header-content">
+<p>Make money everyday</p>
+</div>
+</body>
+
+In this case, the element with the id tag will take precedence over the other attributes.
