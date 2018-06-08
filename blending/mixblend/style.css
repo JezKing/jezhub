@@ -1,0 +1,57 @@
+body {
+    background-image: url("bkgnd4.jpg"), url("bkgnd3.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-size: 100%;
+    padding-top: 20pt;
+}
+div.A
+    {background-color: rgb(13, 52, 95);
+    border-radius: 37pt;
+    box-shadow: 10px 10px black;
+    position: relative;
+    height: 500px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40pt;
+    margin-bottom: auto;
+}
+    div.a1 {background-color:white;
+            background-image: url(dog6.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 45pt;
+            padding: top 15pt;;
+            height: 50%;
+            width: 95%;
+            color: black;
+            font-family: Arial;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40pt;
+            margin-bottom: auto;
+            }
+    div.a2 {background-color: rgb(24, 117, 128);
+        border-radius: 45pt;
+        color: black;
+        font-family: Lucida Sans;
+        height: 45%;
+        width: 97%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15pt;
+        margin-bottom: 40pt;
+    }
+    h2 {text-align: center;
+        font-family: Lucida Sans Regular;
+    }
+    h3 {text-align: center;
+        font-family: Lucida Console;
+        font-size: 12.5pt;
+    }
+    p {font-family: Lucida Calligraphy;
+        font-size: 10.5pt;
+        text-align: center;
+   }
