@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: auto;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 1.2);
+    ;
+    border: 1px solid black;
+    position: fixed;
+    width: 1500px;
+}
+
+.navbar .logo {
+    float: left;
+    margin: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: 100px;
+}
+
+.nav {
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 20px 100px 20px;
+    color: white;
+}
+
+.nav li {
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 5px;
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    padding-top: 90px;
+    background-image: url(http://res.cloudinary.com/code-freak/image/upload/v1525173663/cupin_cyuztt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pix {
+    height: 450px;
+    width: 960px;
+}
+
+h1 {
+    color: black;
+    font-family: sans-serif;
+}
+
+.container {
+    border: 1px solid white;
+    margin-right: 50px;
+    margin-left: 250px;
+    margin-top: 20px;
+    padding: 0px;
+    background-color: rgba(255, 215, 0, 0.2);
+    border-radius: 10px;
+    width: 800px;
+    height: 1100px;
+}
+
+.stories {
+    padding-top: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.stories h2 {
+    font-family: 'roboto', sans-serif;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+#top {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+button {
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    width: 15%;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+#match {
+    background-color: whitesmoke;
+    width: 20%;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    color: green;
+}
+
+.maestro {
+    padding-left: 70px;
+    padding-top: 20px;
+    float: right;
+    padding-right: 30px;
+}
+
+.messi {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.ars {
+    width: 300px;
+    height: 200px;
+}
+
+.zabla {
+    padding-left: 70px;
+    padding-top: 20px;
+    float: right;
+    padding-right: 30px;
+}
+
+.gunner {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.crystal {
+    padding-left: 70px;
+    padding-top: 20px;
+    float: right;
+    padding-right: 10px;
+}
+
+.vid {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
