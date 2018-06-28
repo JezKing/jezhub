@@ -1,0 +1,269 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dcd7d7;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.text-content {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.text-content>span {
+    margin: 5px;
+}
+
+.container-space {
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-space {
+    cursor: pointer;
+}
+
+.container-space div {
+    width: 20%;
+    height: 20%;
+    margin: 2.5%;
+    float: left;
+    border-radius: 3px;
+    background: #141214;
+}
+
+.container-space>div:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.refresh {
+    cursor: pointer;
+}
+
+.white-font {
+    color: #fff;
+}
+
+.yellow-font {
+    color: yellow;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-gray {
+    background-color: #716F71;
+}
+
+.bg-yellow {
+    background-color: yellowgreen;
+}
+
+.container-space .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+    animation-name: flipInY;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+.container-space .card.show {
+    font-size: 33px;
+    display: inline-block !important;
+}
+
+.container-space .card i.hide {
+    display: none;
+}
+
+.container-space .card.disable {
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.container-space .card.match {
+    cursor: default;
+    background: #E5F720;
+    font-size: 33px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+.container-space .card.unmatch {
+    animation-name: pulse;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+    background: #e2043b;
+}
+
+.failedMsg {
+    width: 300px;
+    position: absolute;
+    top: 30px;
+    right: 2px;
+    padding: 5px;
+    background: #ea9485;
+    opacity: 0.8;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.failedMsg>i {
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    cursor: pointer;
+}
+
+.failedMsg>button {
+    float: right;
+    margin-top: 10px;
+    background: tomato;
+}
+
+.successMsg {
+    width: 320px;
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    background: lightgreen;
+    opacity: 0.8;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.content-1 {
+    font-size: 24px;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: green;
+}
+
+
+/* animations */
+
+@keyframes flipInY {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    to {
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+/* Media queries to handle different screen sizes */
+
+@media only screen and (max-width: 530px) {
+    .container {
+        width: 400px;
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .container {
+        width: 319px;
+        height: 319px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
